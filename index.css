@@ -46,7 +46,147 @@
 			}
 
 			@media screen and (max-width: 600px) {
-				.mainNav.responsive {position: relative;}
+				.mainNav.responsive {position: relative;}section{
+	padding: 5px;
+}
+
+
+
+.mainNav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	list-style: none;
+}
+
+.mainNav a{		
+	color: #3d3d3d;
+	padding-left: 60px;
+	padding-right: 60px;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	display: inline-block
+
+}
+
+.mainNav a:hover {
+	background-color: hotpink;
+}
+
+.mainNav .icon{
+	float: none;
+	display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.mainNav a {display: none;}
+	.mainNav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+.mainNav.responsive {position: relative;}
+.mainNav.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.mainNav.responsive a {
+	float: right;
+	display: block;
+	text-align: center;
+}
+}
+
+
+#logopic{
+	width:150px;
+}
+
+			
+
+@media screen and (max-width: 600px) {
+#logo{
+	justify-content: left;
+	align-items: left;
+
+}
+}
+
+#mainbody{
+	z-index: 50;
+	position: absolute;
+	width: 100%;
+	height: 350px;
+	margin-top: 200px;
+	background-color: #f7d342;
+}
+
+#maintop{
+	z-index: 100;
+	position: absolute;
+	margin-top: 150px;
+	margin-left: 150px;
+}
+
+#homepageimage{
+	height: 640px;
+	width: 500px;
+}
+
+.left{
+	padding-right: 100px;
+	padding-left: 100px;
+
+}
+
+.right{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+#shop{
+	z-index: 150;
+	position: absolute;
+	margin-top: 160px;
+	margin-left: 600px;
+	height: 200px;
+	width: 200px;
+
+}
+
+main {
+	margin-top: 570px;
+	overflow: auto;
+	width: 100%;
+}
+
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+	z-index: -1;
+
+	}
+
+article {
+height: 250px;
+margin-top: 500px;
+margin-bottom: 1%;
+background-color: #efefef;
+}
 				.mainNav.responsive .icon {
 					position: absolute;
 					right: 0;
