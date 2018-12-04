@@ -1,0 +1,286 @@
+			.mainNav {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: white;
+				top: 0;
+				width: 100%;
+				z-index: 100;
+				text-align: center;
+				list-style: none;
+			}
+
+			.mainNav a{
+			
+				color: #3d3d3d;
+				padding-left: 0px 50px 0px 50px;
+				text-decoration: none;
+				text-align: center;
+				font-family: 'montserrat', sans-serif;
+				color: #edd240;
+				display: inline-block;
+				padding-left: 70px;
+				padding-right: 50px;
+				margin-right: 50px;
+
+			}
+
+			.mainNav a:hover {
+				background-color: hotpink;
+			}
+
+			.mainNav .icon{
+				float: none;
+				display: none;
+			}
+
+
+
+			@media screen and (max-width: 600px) {
+				.mainNav a {display: none;}
+				.mainNav a.icon {
+					float: right;
+					display: block;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				.mainNav.responsive {position: relative;}
+				.mainNav.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+
+				.mainNav.responsive a {
+					float: right;
+					display: block;
+					text-align: center;
+				}
+			}
+
+			.logo{
+				width:150px;
+				height: 150px;
+			}
+
+			#logopic{
+				width: 200px;
+				height: 150px;
+			}
+
+			@media screen and (max-width: 600px) {
+				#logopic{
+					display: block;
+					float: left;
+
+				}
+			}
+
+			body {
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+main {
+	overflow: auto;
+	
+}
+
+.mySlides {
+      display:none;
+      width: 100%;
+    }
+
+nav, #feature, footer {
+	margin: 1%;
+}
+			
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+}
+			
+
+nav, footer {
+	background-color: #efefef;
+	padding: 10px 0;
+}
+
+#feature, article {
+	height: 250px;
+	margin-bottom: 1%;
+	background-color: #efefef;
+}
+
+#feature{
+	z-index: 50;
+	background-image: url(shoes2.jpg);
+	background-size: cover;
+
+
+}
+
+
+/*about page*/
+
+.aboutus{
+	font-family: Montserrat;
+	text-align: center;
+	color: hotpink;
+}
+
+.about{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+
+
+
+}
+
+
+.icon{
+	float: left;
+	height: 500px;
+	width: 500px;
+	margin-left:50px;
+}
+
+.blurb{
+	margin-top: 50px;
+	float: right;
+	margin-right: 300px;
+}
+
+
+
+
+
+
+
+/*contact page*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: white;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: montserrat;
+  font-color: #3d3d3d;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: montserrat;
+
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: hotpink;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: montserrat;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
