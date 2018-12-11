@@ -45,31 +45,32 @@
 	.mainNav.responsive .icon {
 		position: absolute;
 		right: 0;
-		top: 0;
-	}
-
+		top: 0; }
 	.mainNav.responsive a {
 		float: none;
 		display: block;
-		text-align: center;
+		text-align: center; }
+	.slideshow {
+		float: left;
+		display: block;
 	}
 }
 
 #mainbody{
 	z-index: -2;
 	position: absolute;
-	margin-top: 200px;
+	margin-top: 150px;
 	width: 100%;
 	height: 330px;
 	background-color: #f7d342;
 }
 
-#shop{
+#shopnow{
 	z-index: -1;
 	position: absolute;
-	margin-left: 250px;
-	height: 300px;
-	width: 300px;
+	margin: 100px 0px 0px 250px;
+	height: 400px;
+	width: 500px;
 	float: left;
 }
 
@@ -77,7 +78,7 @@
 main {
 	z-index: 1;
 	margin-left: 830px;
-	margin-top: 200px;
+	margin-top: 250px;
 	
 }
 
@@ -88,8 +89,29 @@ main {
 .mySlides {
   display: inline-block;
   width: 100%;
-  height: 530px;
 }
+
+.left, .right  {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+  color: pink;
+  background-color: none;
+  border-radius: 0 3px 3px 0;
+}
+
+.left {
+	margin-left: -29px;
+}
+
+.right {
+  margin-left: 510px;
+}
+
 
 article {
 height: 250px;
