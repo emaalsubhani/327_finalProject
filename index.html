@@ -42,8 +42,8 @@
 		  <img class="mySlides" src="img/shoes9.png">		  
 		  <img class="mySlides" src="img/shoes10.png">
 
-		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		  <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="right" onclick="plusDivs(1)">&#10095;</button>
 		</div>
 	</main>
 
@@ -57,20 +57,23 @@ x.className = "mainNav";
 }
 
 }
+
 var slideIndex = 1;
 showDivs(slideIndex);
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
+
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides")
-  if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length};
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display="none"; 
-    }
-    x[slideIndex-1].style.display="block"
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
 }
 </script>
 
