@@ -9,22 +9,23 @@
 
 .mainNav a{
 	color: #edd240;
-	padding: 30px 60px 0px 60px;
+	margin: auto;
+	padding: 30px 30px 0px 30px;
 	text-decoration: none;
-	font-family: 'montserrat', sans-serif;
-	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
 	display: inline-block;
 
 }
 
 #logo {
 	display: inline-block;
-	margin-top: 20px;
+	margin: 20px 0 0 40px;
 }
 
 #logopic {
-	width: 140px;
-	height: 100px;
+	width: 120px;
+	height: 85px;
 }
 
 
