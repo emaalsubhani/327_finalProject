@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,10 +13,11 @@
 
 <body>
 
-	<div id="logo"><img id="logopic" src="img/logo2.png" alt="logo"></div>
+	<div id="logo"><a href="index.html"><img id="logopic" src="img/logo2.png"  alt="logo"></a></div>
 		
 	<nav class="mainNav" id="responsiveNav">
-		<a href="https://www.etsy.com/shop/MangoGirlsCo"><h2>Shop</h2></a>
+			<a href="index.html"><h2>Home</h2></a>
+			<a href="https://www.etsy.com/shop/MangoGirlsCo"><h2>Shop</h2></a>
 			<a href="about.html"><h2>About</h2></a>
 			<a href="contact.html"><h2>Contact</h2></a>
 			<a href="https://www.instagram.com/mangogirlsco/"><h2>Instagram</h2><a>
@@ -26,33 +26,30 @@
 	</nav>
 
 	<div id="mainbody">
+
+		<div id="shopnow">
+			<img src="img/mango.png" alt=shop>
 		</div>
 
-		<div id="shop">
-			<img id="shopnow" src="img/mango.png" alt=shop>
-		</div>
+		<main>
+			<div class="slideshow">
+			  <img class="mySlides" src="img/shoes11.png">
+			  <img class="mySlides" src="img/shoes2.jpg">
+			  <img class="mySlides" src="img/shoes3.jpg">
+			  <img class="mySlides" src="img/shoes4.png">
+			  <img class="mySlides" src="img/shoes5.png">
+			  <img class="mySlides" src="img/shoes6.png">
+			  <img class="mySlides" src="img/shoes7.png">
+			  <img class="mySlides" src="img/shoes8.png">
+			  <img class="mySlides" src="img/shoes9.png">		  
+			  <img class="mySlides" src="img/shoes10.png">
 
-	<main>
-		<div class="slideshow">
-		  <img class="mySlides" src="img/shoes11.png">
-		  <img class="mySlides" src="img/shoes2.jpg">
-		  <img class="mySlides" src="img/shoes3.jpg">
-		  <img class="mySlides" src="img/shoes4.png">
-		  <img class="mySlides" src="img/shoes5.png">
-		  <img class="mySlides" src="img/shoes6.png">
-		  <img class="mySlides" src="img/shoes7.png">
-		  <img class="mySlides" src="img/shoes8.png">
-		  <img class="mySlides" src="img/shoes9.png">		  
-		  <img class="mySlides" src="img/shoes10.png">
+			  <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</main>
 
-		  <button class="left" onclick="plusDivs(-1)">&#10094;</button>
-		  <button class="right" onclick="plusDivs(1)">&#10095;</button>
-		</div>
-	</main>
-				
-	<footer>
-		Mango Girls Co. &copy; 2018
-	</footer>
+	</div>
 
 <script>
 function myFunction() {
