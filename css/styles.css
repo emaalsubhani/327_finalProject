@@ -213,15 +213,15 @@ footer {
 @media screen and (max-width: 600px){
 	.blurb{
 		text-align: center;
+		 margin-right: 20px;
 		margin-top: 0px;
 	}
-}
 
-@media screen and (max-width: 600px){
 	.icon{
 		margin-left: 0px;
 		float:left;
 	}
+
 }
 
 
