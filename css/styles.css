@@ -135,30 +135,18 @@ margin-bottom: 1%;
 background-color: #efefef;
 }
 
-nav, #feature, footer {
-	margin: 1%;
-}
-			
-.column1, .column2, .column3 {
-	width: 31.3%;
-	float: left;
-	margin: 1%;
-}
-			
 
 
-#feature, article {
-	height: 250px;
-	margin-bottom: 1%;
-	background-color: #efefef;
-}
-
-#feature{
-	z-index: 50;
-	background-image: url(shoes2.jpg);
-	background-size: cover;
-
-
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: hotpink;
+  font-size: 16px;
+  font-family: montserrat;
+  text-align: center;
 }
 
 
