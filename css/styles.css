@@ -90,13 +90,31 @@ main {
 		margin-left: 0px;
 	}
 
-	#mainbody{
-		height: 100%;
-	}
+#mainbody{
+	z-index: -2;
+	position: absolute;
+	margin-top: 180px;
+	width: 100%;
+	height: 350px;
+	background-color: #f7d342;
+}
 
+#shopnow{
+	z-index: -1;
+	position: absolute;
+	margin: 150px 0px 0px 250px;
+	height: 400px;
+	width: 500px;
+	float: left;
 }
 
 
+main {
+	z-index: 1;
+	margin-left: 830px;
+	margin-top: 100px;
+	
+}
 
 .slideshow {
 	width: 60%;
@@ -113,19 +131,23 @@ main {
   top: 50%;
   width: auto;
   padding: 10px;
-  margin-top: 30px;
-  font-size: 15px;
-  color: pink;
-  background-color: none;
-  border-radius: 0 3px 3px 0;
 }
 
 .left {
-	margin-left: -29px;
+	margin-left: -28px;
 }
 
 .right {
   margin-left: 510px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  font-size: 15px;
+  color: pink;
+  background-color: none;
+  border-radius: 0 3px 3px 0;
 }
 
 
