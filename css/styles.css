@@ -2,14 +2,12 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 100;
 	text-align: center;
 	list-style: none;
 }
 
 .mainNav a{
 	color: #edd240;
-	margin: auto;
 	padding: 30px 30px 0px 30px;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
@@ -18,7 +16,12 @@
 
 }
 
+nav {
+	margin: auto;
+}
+
 #logo {
+	background-color: white;
 	display: inline-block;
 	margin: 20px 0 0 40px;
 }
@@ -33,7 +36,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.mainNav a {display: none;}
 	.mainNav a.icon {
 		float: right;
@@ -41,10 +44,11 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.mainNav.responsive {position: relative;}
 	.mainNav.responsive .icon {
 		position: absolute;
+		font-size: 10px;
 		right: 0;
 		top: 0; }
 	.mainNav.responsive a {
@@ -53,42 +57,8 @@
 		text-align: center; }
 	.slideshow {
 		float: left;
-		display: block;
 	}
 }
-
-#mainbody{
-	z-index: -2;
-	position: absolute;
-	margin-top: 150px;
-	width: 100%;
-	height: 330px;
-	background-color: #f7d342;
-}
-
-#shopnow{
-	z-index: -1;
-	position: absolute;
-	margin: 100px 0px 0px 250px;
-	height: 400px;
-	width: 500px;
-	float: left;
-}
-
-
-main {
-	z-index: 1;
-	margin-left: 830px;
-	margin-top: 250px;
-	
-}
-
-
-@media screen and (max-width: 600px){
-	#shop{
-		float: left;
-		margin-left: 0px;
-	}
 
 #mainbody{
 	z-index: -2;
@@ -134,7 +104,7 @@ main {
 }
 
 .left {
- margin-left: -28px;
+	margin-left: -28px;
 }
 
 .right {
@@ -146,7 +116,7 @@ main {
   border: none;
   font-size: 15px;
   color: pink;
-  background-color: yellow;
+  background-color: none;
   border-radius: 0 3px 3px 0;
 }
 
@@ -158,18 +128,14 @@ margin-bottom: 1%;
 background-color: #efefef;
 }
 
-
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: hotpink;
-  font-size: 16px;
-  font-family: montserrat;
-  text-align: center;
+nav, footer {
+	margin: 1%;
+}
+			
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
 }
 
 
@@ -179,20 +145,15 @@ footer {
 	font-family: Montserrat;
 	text-align: center;
 	color: hotpink;
-	font-size: 25px;
 }
 
 .about{
-	width: 100%;
+	width: 90%;
 	margin: auto;
 	padding: 10px;
-	position: fixed;
 
 
-}
 
-#header{
-	margin-top: 200px;
 }
 
 
@@ -204,29 +165,13 @@ footer {
 }
 
 .blurb{
-	margin-top: 100px;
+	margin-top: 50px;
 	float: right;
-	font-size: 16px;
-	font-family: montserrat;
+	margin-right: 300px;
 }
 
-@media screen and (max-width: 600px){
-	@media screen and (max-width: 600px){
-	.blurb{
-		text-align: center;
-		 margin-right: 20px;
-		margin-top: 20px;
-	}
 
-	.icon{
-		margin-left: 10px;
-		float:left;
-		width: 100%;
-		height: 375px;
-		margin-right: 20px;
-	}
 
-}
 
 
 
