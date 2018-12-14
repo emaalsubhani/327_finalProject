@@ -2,6 +2,21 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: white;
+  height: 100%;
+}
+
 .mainNav {
   position: fixed;
   top: 0;
@@ -61,6 +76,17 @@ nav {
     text-align: center; }
 }
 
+@media screen and (max-width: 900px){
+  #shopnow{
+    width: 100%;
+    float: left;
+    }
+  #mainbody{
+    max-height: 100%;
+      }
+}
+/*end of @media */
+
 #mainbody{
   width: 100%;
   margin-top: 50px;
@@ -69,27 +95,15 @@ nav {
 }
 
 #shopnow{
-  width: 40%;
-  float: left;
-  margin: 0px 30px 30px 0px;
-
-}
-
-@media screen and (max-width: 900px){
-  #shopnow{
-    width: 100%;
-    float: left;
-    margin: auto; 
-  }
-  #mainbody{
-    height: 100%;
-  }
-
+  margin-top: 5%;
+  max-width: 600px;
+  display: inline-block;
 }
 
 main {
-  width: 50%;
-  float: left;
+  max-width: 50%;
+  float: right;
+  height: 100px;
 
 }
 
@@ -99,16 +113,14 @@ img{
 }
 
 .slideshow {
-  max-width: 75%;
+  width: 70%;
   position: relative;
-  margin: auto;
 }
 
 .mySlides {
   display: none
   vertical-align: middle;
   width: 100%;
-  height: 600px;
 }
 
 .prev, .next {
@@ -118,7 +130,7 @@ img{
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: hotpink;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -132,10 +144,11 @@ img{
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: white;
 }
 
 .dots {
+  max-width: 600px;
   text-align: center;
 }
 
@@ -143,8 +156,8 @@ img{
   cursor: pointer;
   height: 10px;
   width: 10px;
-  margin: 2px 2px 0 0;
-  background-color: #bbb;
+  margin: 10px 2px 0 0;
+  background-color: #f7d342;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -154,12 +167,41 @@ img{
   background-color: #717171;
 }
 
+/* for sildeshow */
 @media only screen and (max-width: 900px) {
-  .prev, .next, {font-size: 15px}
+  img{
+    width: 100%;
+  }
+  .prev, .next {
+    display: none;
+  }
   .slideshow {
     width: 100%;
   }
+  .mySlides {
+    width: 100%;
+    min-height: 100px;
+    display: block;
+    float: left;
+  }
+  main {
+    max-width: 100%;
+    min-height: 100px;
+    display: block;
+    float: left;
+  }
+  .dots {
+    height: 100px;
+
+  }
+  .dot {
+    font-size: 3pt;
+    margin: 0px 2px 0 0;
+    background-color: #f7d342;
+
+  }
 }
+/*end of slideshow @media */
 
 nav, footer {
   margin: 1%;
@@ -173,6 +215,7 @@ nav, footer {
 
 footer {
   position: fixed;
+  margin: auto;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -187,58 +230,56 @@ footer {
 /*about page*/
 
 .aboutus{
-	font-family: Montserrat;
-	text-align: center;
-	color: hotpink;
-	font-size: 25px;
+  font-family: Montserrat;
+  text-align: center;
+  color: hotpink;
+  font-size: 25px;
 }
 
 .about{
-	width: 100%;
-	margin: auto;
-	padding: 10px;
-	position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
 
 }
 
-
+#header{
+  margin-top: 200px;
+}
 
 .icon{
-	float: left;
-	height: 500px;
-	width: 500px;
-	margin-left:50px;
+  float: left;
+  height: 500px;
+  width: 500px;
+  margin-left:50px;
 
 }
 
 .blurb{
-	margin-top: 100px;
-	float: right;
-	font-size: 16px;
-	font-family: montserrat;
-	margin-right: 100px;
+  margin-top: 100px;
+  float: right;
+  font-size: 16px;
+  font-family: montserrat;
+  margin-right: 100px;
 }
 
 @media screen and (max-width: 600px){
-	.blurb{
-		text-align: center;
-		 margin-right: 20px;
-		margin-top: 20px;
-	}
+  .blurb{
+    text-align: center;
+     margin-right: 20px;
+    margin-top: 20px;
+  }
 
-	.icon{
-		margin-left: 10px;
-		float:left;
-		width: 100%;
-		height: 375px;
-		margin-right: 20px;
-	}
+  .icon{
+    margin-left: 10px;
+    float:left;
+    width: 100%;
+    height: 375px;
+    margin-right: 20px;
+  }
 
 
-	header{
-		text-align: right;
-	}
-}
 
 
 
@@ -260,14 +301,7 @@ footer {
   text-rendering: optimizeLegibility;
 }
 
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  color: #777;
-  background: white;
-}
+
 
 .container {
   max-width: 400px;
@@ -288,7 +322,7 @@ body {
 #contact {
   background: #F9F9F9;
   padding: 25px;
-	margin-top: 30px;
+  margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
