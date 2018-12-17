@@ -269,6 +269,7 @@ footer {
 @media screen and (max-width: 400px){
   .blurb{
     font-size: 8pt;
+    margin-right: 0px;
   }
   .icon{
     display: inline-block;
